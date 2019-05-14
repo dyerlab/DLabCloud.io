@@ -10,7 +10,7 @@
             <div class="col-md-6">
                 
                 <div class="card">
-                    <img class="card-img-top" src="/dyer.png" alt="Card image cap">
+                    <img class="card-img-top" src="/images/dyer.png" alt="Card image cap">
                     <div class="card-body">
                         <h3 class="panel-title">Login</h3>
                         <form action="/login" method="POST">
@@ -26,8 +26,8 @@
                                 <input type="submit" class="btn btn-block btn-success" value="login" />
                             </div>
                         </form>
-                        <p>No Account?</p>
-                        <a href="/register" class="btn btn-block btn-info"> Register </a>
+                        <hr />
+                        <p>No Account? <a href="/register">Register</a>
                     </div>
                 </div>
             </div>

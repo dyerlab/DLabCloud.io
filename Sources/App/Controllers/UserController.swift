@@ -18,7 +18,7 @@ final class UserController {
                 }
                 user.password = try BCryptDigest().hash(user.password)
                 return user.save(on: req).map { _ in
-                    return req.redirect(to: "/login")
+                    return req.redirect(to: "/")
                 }
             }
         }
@@ -37,7 +37,7 @@ final class UserController {
                 on: req
                 ).map { user in
                     guard let user = user else {
-                        return req.redirect(to: "/login")
+                        return req.redirect(to: "/")
                     }
                     try req.authenticateSession(user)
                     return req.redirect(to: "/profile")
@@ -52,6 +52,6 @@ final class UserController {
     
     func logout(_ req: Request) throws -> Future<Response> {
         try req.unauthenticateSession(User.self)
-        return Future.map(on: req) { return req.redirect(to: "/login") }
+        return Future.map(on: req) { return req.redirect(to: "/") }
     }
 }

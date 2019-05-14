@@ -17,4 +17,8 @@ public func routes(_ router: Router) throws {
     protectedRouter.get("profile", use: userController.renderProfile)
 
     router.get("logout", use: userController.logout)
+    
+    router.get("") { req -> Future<View> in
+        return try req.view().render("home")
+    }
 }

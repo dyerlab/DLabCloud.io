@@ -34,8 +34,11 @@ public func configure(
     
     try services.register(AuthenticationProvider())
     var middlewares = MiddlewareConfig.default()
+    
     middlewares.use( SessionsMiddleware.self )
-    services.register(middlewares)
+    middlewares.use( FileMiddleware.self ) // Serves files from `Public/` directory
+    
+    services.register( middlewares )
     
     config.prefer(MemoryKeyedCache.self, for: KeyedCache.self)
 }
