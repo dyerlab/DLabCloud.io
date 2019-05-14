@@ -11,3 +11,4 @@ final class AppTests: XCTestCase {
         ("testNothing", testNothing)
     ]
 }
+
