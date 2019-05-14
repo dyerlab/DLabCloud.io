@@ -10,7 +10,9 @@ Packages
 xcuserdata
 *.xcodeproj
 DerivedData/
-.DS_Store
 
 # End of https://www.gitignore.io/api/vapor
 Package.resolved
+
+
+.DS_Store
