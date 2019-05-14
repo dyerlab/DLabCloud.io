@@ -1,5 +1,5 @@
 # DLabCloud.io
 
-    Population Genetic Software that Doesn't Suck
+    Research laboratory logistics so you don't go crazy.
 
 
