@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Auth</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <body class="container">
+        <br />
+            <div class="col-md-12 row h-100 align-items-center">
+                <br />
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="/images/logo.png" class="img-thumbnail">
+                        </div>
+                        
+                        <div class="col-md-7">
+                            <h1 class="display-4">DLabCloud.io</h1>
+                            <p class="lead">Population genetic software that doesn't suck</p>
+                            <hr class="my-4">
+                            <form action="/login" method="POST">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" class="form-control" id="password" placeholder="Enter password"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-block btn-success" value="login" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
