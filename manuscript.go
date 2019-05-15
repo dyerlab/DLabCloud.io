@@ -51,7 +51,7 @@ func MigrateManuscript() {
 		db.Create(&Manuscript{
 			Authors:  "Dyer RJ",
 			Year:     2015,
-			Title:    "Is there such a thing as landscape genetics? ",
+			Title:    "Is there such a thing as landscape genetics?",
 			Journal:  "Molecular Ecology",
 			Volume:   24,
 			Pages:    "3518-3528",
